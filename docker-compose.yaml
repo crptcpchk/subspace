@@ -22,7 +22,7 @@ services:
         "--rpc-methods", "unsafe",
         "--rpc-listen-on", "0.0.0.0:9944",
         "--farmer",
-        "--name", "crptcpchk"
+        "--name", "NODE_NAME"
       ]
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9944"]
