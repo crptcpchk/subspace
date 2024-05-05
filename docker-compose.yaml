@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   node:
-    image: ghcr.io/subspace/node:gemini-3h-2024-apr-26-2
+    image: ghcr.io/subspace/node:gemini-3h-2024-may-01
     volumes:
       - node-data:/var/subspace:rw
     ports:
@@ -33,7 +33,7 @@ services:
   farmer:
     depends_on:
       - node
-    image: ghcr.io/subspace/farmer:gemini-3h-2024-apr-26-2
+    image: ghcr.io/subspace/farmer:gemini-3h-2024-may-01
     volumes:
       - farmer-data:/var/subspace:rw
     ports:
